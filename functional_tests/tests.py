@@ -123,5 +123,3 @@ class NewVisitorTest(LiveServerTestCase):
         self.assertNotIn('make a fly', page_text)
 
         # Satisfied, they both go back to sleep
-
-        browser.quit()
