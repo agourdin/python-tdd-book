@@ -1,1 +1,1 @@
-web: gunicorn python-tdd-book.wsgi
+web: gunicorn superlists.wsgi
