@@ -3,4 +3,3 @@ geckodriver.log
 Pipfile
 *.pyc
 geckodriver
-/static
