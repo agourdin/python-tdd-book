@@ -23,7 +23,6 @@ class ItemValidationTest(FunctionalTest):
         self.wait_for_row_in_list_table('1: Buy milk')
 
         # Perversely, she now decides to submit a second blank list item
-        self.browser.get(self.live_server_url)
         self.browser.find_element_by_id('id_new_item').send_keys(Keys.ENTER)
 
         # She receives a similar warning on the list page

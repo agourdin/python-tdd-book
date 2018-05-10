@@ -8,6 +8,7 @@ django-heroku = "*"
 gunicorn = "*"
 isort = "*"
 heroku = "*"
+selenium = "*"
 
 [dev-packages]
 
