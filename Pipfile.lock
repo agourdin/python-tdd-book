@@ -1,11 +1,7 @@
 {
     "_meta": {
         "hash": {
-<<<<<<< HEAD
-            "sha256": "415dfdcb118dd9bdfef17671cb7dcd78dbd69b6ae7d4f39e8b44e71d60ca72e7"
-=======
             "sha256": "c513d2413dc9ade0a74e63702ba0d777cc8ed2dfba9d0c61a520526b4445b69a"
->>>>>>> d1d5b5f933fe71b13281113f6aeb0dbb547cf53b
         },
         "pipfile-spec": 6,
         "requires": {
@@ -19,9 +15,6 @@
             }
         ]
     },
-<<<<<<< HEAD
-    "default": {},
-=======
     "default": {
         "dj-database-url": {
             "hashes": [
@@ -109,6 +102,5 @@
             "version": "==3.3.1"
         }
     },
->>>>>>> d1d5b5f933fe71b13281113f6aeb0dbb547cf53b
     "develop": {}
 }
