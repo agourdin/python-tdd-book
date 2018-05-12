@@ -77,10 +77,28 @@ class ItemValidationTest(FunctionalTest):
             self.get_error_element().is_displayed()
         ))
 
-        # She starts typing a new item into the input box
+        # She starts typing into the input box again
         self.get_item_input_box().send_keys('a')
 
         # She notices the error message goes away
+        self.wait_for(lambda: self.assertFalse(
+            self.get_error_element().is_displayed()
+        ))
+
+        # She clears the box and types in the same item again
+        self.get_item_input_box().clear()
+        self.get_item_input_box().send_keys('Banter too thick')
+        self.get_item_input_box().send_keys(Keys.ENTER)
+
+        # She notices the validation error has returned:
+        self.wait_for(lambda: self.assertTrue(
+            self.get_error_element().is_displayed()
+        ))
+
+        # She clicks the input box
+        self.get_item_input_box().click()
+
+        # She notices the validation error goes away again
         self.wait_for(lambda: self.assertFalse(
             self.get_error_element().is_displayed()
         ))
